@@ -1,0 +1,92 @@
+.border {
+    border: 2px solid tomato;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+
+/* Scrollbar for modern browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark background for the track */
+    border-radius: 10px; /* Rounded track edges */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333; /* Dark gray thumb */
+    border-radius: 10px; /* Rounded thumb edges */
+    border: 2px solid #1a1a1a; /* Creates a gap effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Slightly lighter gray on hover */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #777; /* Even lighter gray when active */
+}
+
+/* Scrollbar for Firefox */
+* {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #333 #1a1a1a; /* Thumb and track colors */
+}
+
+
+/* seeker selection */
+.seekbar {
+    position: relative;
+    height: 0px; /* Keep the visible size */
+    background-color: #4d4d4d;
+}
+  
+.seekbar::before {
+    content: '';
+    position: absolute;
+    top: -11px; /* Expand the clickable area */
+    left: 0;
+    width: 100%;
+    height: 22px; /* Total clickable height */
+    background: transparent; /* Make it invisible */
+    z-index: 1; /* Ensure it sits on top */
+}
+  
